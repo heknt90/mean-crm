@@ -1,0 +1,26 @@
+{
+  "name": "mean-crm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "server": "nodemon index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heknt90/mean-crm.git"
+  },
+  "author": "https://github.com/heknt90/",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/heknt90/mean-crm/issues"
+  },
+  "homepage": "https://github.com/heknt90/mean-crm#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
