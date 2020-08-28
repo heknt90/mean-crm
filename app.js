@@ -9,9 +9,14 @@ const positionRoutes = require('./routes/position')
 const keys = require('./config/keys')
 const app = express()
 
+const passport = require('passport')
+
 mongoose.connect(keys.mongoURI, {useNewUrlParser: true, useUnifiedTopology: true})
     .then(() => console.log('MongoDB connected.'))
     .catch(error => console.log(error))
+
+app.use(passport.initialize())
+require('./middleware/passport')(passport)
 
 app.use(require('morgan')('dev'))
 app.use(bodyParser.urlencoded({ extended: true }))

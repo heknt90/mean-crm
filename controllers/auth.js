@@ -6,9 +6,7 @@ const keys = require('../config/keys')
 
 module.exports.login = async function(req, res) {
     // check email and password
-    const candidate = await User.findOne({
-        email: req.body.email
-    })
+    const candidate = await User.findOne({email: req.body.email})
 
     if (candidate) {
         // User exist
