@@ -1,23 +1,46 @@
-module.exports.getByCategoryId = function(req, res) {
-    res.status(200).json({
-        getByCategoryId: 'from controller'
-    })
+const Position = require('../models/Position')
+const errorHandler = require('../utils/errorHandler')
+
+module.exports.getByCategoryId =  async function(req, res) {
+    
+    try {
+        const positions = await Position.find({
+            category: req.params.categoryId,
+            user: req.user.id
+        })
+        res.status(200).json(positions)
+    } 
+    catch (error) {
+        errorHandler(res, error)
+    }
 }
 
 module.exports.create = function(req, res) {
-    res.status(200).json({
-        create: 'from controller'
-    })
+
+    try {
+        
+    } 
+    catch (error) {
+        errorHandler(res, error)
+    }
 }
 
 module.exports.remove = function(req, res) {
-    res.status(200).json({
-        remove: 'from controller'
-    })
+    
+    try {
+        
+    } 
+    catch (error) {
+        errorHandler(res, error)
+    }
 }
 
 module.exports.update = function(req, res) {
-    res.status(200).json({
-        update: 'from controller'
-    })
+
+    try {
+        
+    } 
+    catch (error) {
+        errorHandler(res, error)
+    }
 }
