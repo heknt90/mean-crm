@@ -4,7 +4,7 @@
 
 ![](layout/cover2.jpg)
 
-[Демонстрация верстки](https://fierce-castle-23806.herokuapp.com)
+[Демонстрация приложения](https://fierce-castle-23806.herokuapp.com)
 
 
 Приложение создано в рамках прохождения курса "MEAN. Angular, Node, Express, Mongo. Создание Сервиса с Нуля"
