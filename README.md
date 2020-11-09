@@ -1,6 +1,7 @@
 # CRM Newborn
 
 ![](layout/cover1.jpg)
+
 ![](layout/cover2.jpg)
 
 [Демонстрация верстки](https://fierce-castle-23806.herokuapp.com)
